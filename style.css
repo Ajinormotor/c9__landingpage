@@ -41,6 +41,10 @@ color: var(--main-color);
 
 }
 
+.side__menus{
+    display: none;
+}
+
 .header__btn2, .header__btns2{
     width:166.5px;
 height:  36.75px;
@@ -194,6 +198,12 @@ overflow: hidden;
 }
 .footer__wrapper{
    margin-top: 3%;
+   text-align: start;
+   padding: 15px;
+}
+
+.footer__box{
+    text-align: start;
 }
 
 .footer__box  h1{
@@ -229,6 +239,22 @@ color:#7C7C7C;
     display: block;
 }
 
+.anim{
+  animation: fade 0.4s ease-in;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0px;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0px);
+    }
+    
+}
+
 
 
 @media screen  and (max-width:450px) {
@@ -244,6 +270,7 @@ color:#7C7C7C;
     z-index: 110;
     text-align: center;
     display: block;
+    direction: column;
     background: var(--main-color);
     color: #FCFCFC;
 }
@@ -257,9 +284,11 @@ color:#7C7C7C;
 }
 
 .side__menu{
-    display: flex;
+    display: none;
     gap: 1rem;
 }
+
+
 
 .logo{
     width: 120px;
@@ -274,6 +303,10 @@ color:#7C7C7C;
     width: 80px;
     font-size: 10px;
 
+}
+
+.hero{
+    padding: 10px;
 }
 
     .hero__bottom{
@@ -316,15 +349,24 @@ color:#7C7C7C;
         padding: 0px;
         margin: 0px; 
     }
+    .footer__box ul{
+        padding: 0px;
+        justify-content: start;
+        text-align: start;
+        flex: 1;
+        margin-left: 0px;
+    }
 
     .footer__box h1{
         padding: 0px;
+        margin: 0px;
     }
 
     .resources{
         padding: 0px;
-        margin: 0px;
-        left: 0px;
+      margin-left: 0px;
+        left: -36px;
+        position: relative;
     }
 
 .footer__bottom__box{
@@ -355,7 +397,9 @@ color:#7C7C7C;
         justify-content: start;
         text-align: start;
         align-items: start;
-        margin-left: -160px;
+        margin-left: -150px;
+        padding: 0px;
+        position: relative;
     }
 
     .icon{
@@ -363,7 +407,7 @@ color:#7C7C7C;
     }
 
     .show{
-        font-size: 20px;
+        font-size: 25px;
         color: var(--main-color);
         display: block;
         transition: 0.5s;
@@ -371,7 +415,7 @@ color:#7C7C7C;
 
     .hide{
         cursor: pointer;
-        font-size: 20px;
+        font-size: 25px;
         color: var(--main-color);
         display: none;
         transition: 0.5s;
