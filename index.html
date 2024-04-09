@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+  
 
 </head>
 <body>
@@ -27,7 +28,7 @@
         </div>
 
         <div class="navlinks  flex">
-            <ul  class="flex justify-center list-none  gap-4">
+            <ul  class="menulist flex justify-center list-none  gap-4">
      <li><a href="#">About Us</a></li>
       <li><a href="#">Services</a></li>
         <li><a href="#">Portfolio</a></li>
@@ -44,8 +45,11 @@
             <button class="header__btns2">CALL US TODAY</button>
         </div>
 
-        
-<i class="ri-menu-2-line show"></i>
+        <div class="icon flex ">
+            <i class="ri-menu-2-line show"  id="show"></i>
+            <i class="ri-close-line hide" id="hide"></i>
+        </div>
+
 
     </div>
 
@@ -221,6 +225,6 @@ justify-center">
 
 
     </div>
-    
+    <script  src="main.js"></script>
 </body>
 </html>
